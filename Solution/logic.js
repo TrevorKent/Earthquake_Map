@@ -88,13 +88,6 @@ function createMap(earthquakes) {
     }).addTo(myMap);
 }
 
-
-
-
-
-
-
-
 // // Creating our initial map object
 // // We set the longitude, latitude, and the starting zoom level
 // // This gets inserted into the div with an id of 'map'
