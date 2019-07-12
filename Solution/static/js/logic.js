@@ -72,7 +72,6 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojs
         position: "bottomright"
     });
 
-    // Then add all the details for the legend
     legend.onAdd = function() {
         var div = L.DomUtil.create("div", "info legend");
 
@@ -86,7 +85,6 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojs
             "#ea2c2c"
         ];
 
-        // Looping through our intervals to generate a label with a colored square for each interval.
         for (var i = 0; i < grades.length; i++) {
             div.innerHTML +=
                 "<i style='background: " + colors[i] + "'></i> " +
@@ -95,6 +93,5 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojs
         return div;
     };
 
-    // Finally, we our legend to the map.
-    legend.addTo(map);
+    legend.addTo(myMap);
 });
